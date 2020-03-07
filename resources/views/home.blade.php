@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! as <strong>{{ strtoupper(Auth::user()->type) }}</strong>
                 </div>
             </div>
         </div>
