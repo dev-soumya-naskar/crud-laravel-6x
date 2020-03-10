@@ -4,7 +4,7 @@ This is a simple Create, Read, Update, Delete application with the new version o
 
 - Make sure you have composer on your system. If not please use [composer](https://getcomposer.org/download/) link to get your required one.
 - You should have PHP >= 7.2.0 to use laravel 6.x.
-- Install a new laravel with composer 
+- Install a new laravel with composer  
 Run `composer create-project --prefer-dist laravel/laravel crud-laravel-6x "6.*"`
 - Run `php artisan serve` to start the server.
 
