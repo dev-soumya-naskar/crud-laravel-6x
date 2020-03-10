@@ -31,17 +31,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function(){
+Route::group(['middleware' => 'adminMW'], function(){
     
     Route::match(['get', 'post'], '/adminOnlyPage/', 'HomeController@admin');
     
 });
-Route::group(['middleware' => 'App\Http\Middleware\MemberMiddleware'], function(){
+Route::group(['middleware' => 'memberMW'], function(){
     
     Route::match(['get', 'post'], '/memberOnlyPage/', 'HomeController@member');    
     
 });
-Route::group(['middleware' => 'App\Http\Middleware\SuperAdminMiddleware'], function(){
+Route::group(['middleware' => 'superadminMW'], function(){
     
     Route::match(['get', 'post'], '/superAdminOnlyPage/', 'HomeController@super_admin');
     
