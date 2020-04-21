@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::get();//paginate(2);
+        $contacts = Contact::get();//$data = DB::table('training_module_questions');
         return view('contacts.index', compact('contacts'));
     }
 
